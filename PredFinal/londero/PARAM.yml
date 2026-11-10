@@ -1,0 +1,134 @@
+semilla_primigenia: 999983.0
+experimento: 7302.0
+dataset: gerencial_competencia_2026.csv.gz
+modo: full
+autor: Facundo Londero
+base: labo-imp/labo2026v PredFinal/z719_final_gerencial.ipynb (13-oct-2026)
+semillerio:
+- 999983.0
+- 150001.0
+- 222247.0
+- 199999.0
+- 777781.0
+- 553897.0
+- 761897.0
+- 815197.0
+- 906187.0
+- 919531.0
+out:
+  ncol_dataset: 158
+  n_campos_buenos: 155
+  n_train: 52606
+  positivos_train: 671.0
+  baja2_train: 333
+  lgbm:
+    AUC: 0.9485748
+    mejores_hiperparametros:
+      num_leaves: 128.0
+      min_data_in_leaf: 16.0
+      num_iterations: 110
+    optimo_en_borde:
+      num_leaves: no
+      min_data_in_leaf: no
+  n_final_train: 65808
+  param_final:
+    objective: binary
+    metric: auc
+    first_metric_only: yes
+    boost_from_average: yes
+    feature_pre_filter: no
+    verbosity: -100.0
+    force_row_wise: yes
+    seed: 999983.0
+    max_bin: 31.0
+    learning_rate: 0.03
+    feature_fraction: 0.5
+    num_leaves: 128.0
+    min_data_in_leaf: 16.0
+    num_iterations: 110
+  entorno:
+    R: R version 4.6.1 (2026-06-24 ucrt)
+    lightgbm: 4.7.0
+    data.table: 1.18.4
+    sistema: Windows
+    nucleos: 16
+  minutos: 299.6
+trainingstrategy:
+  validate: 202107.0
+  training:
+  - 202106.0
+  - 202105.0
+  - 202104.0
+  - 202103.0
+  training_pct: 1.0
+  positivos:
+  - BAJA+1
+  - BAJA+2
+  final_train:
+  - 202107.0
+  - 202106.0
+  - 202105.0
+  - 202104.0
+  - 202103.0
+  future: 202109.0
+campos_excluidos:
+- numero_de_cliente
+- foto_mes
+lgbm:
+  param_fijos:
+    objective: binary
+    metric: auc
+    first_metric_only: yes
+    boost_from_average: yes
+    feature_pre_filter: no
+    verbosity: -100.0
+    force_row_wise: yes
+    seed: 999983.0
+    max_bin: 31.0
+    learning_rate: 0.03
+    feature_fraction: 0.5
+    num_iterations: 2048.0
+    early_stopping_rounds: 200.0
+    num_leaves: 64.0
+    min_data_in_leaf: 128.0
+  grilla:
+    num_leaves:
+    - 64.0
+    - 128.0
+    - 256.0
+    - 512.0
+    - 1024.0
+    min_data_in_leaf:
+    - 4.0
+    - 8.0
+    - 16.0
+    - 32.0
+    - 64.0
+    - 256.0
+    - 512.0
+    - 1024.0
+    - 2048.0
+kaggle:
+  competencia: labo-1-virtual-2026-manager
+  cortes:
+  - 800.0
+  - 850.0
+  - 900.0
+  - 950.0
+  - 1000.0
+  - 1050.0
+  - 1100.0
+  - 1150.0
+  - 1200.0
+  - 1250.0
+  - 1300.0
+  cortes_extra:
+  - 600.0
+  - 650.0
+  - 700.0
+  - 750.0
+  - 1350.0
+  - 1400.0
+  - 1450.0
+  - 1500.0
+  subir: no
