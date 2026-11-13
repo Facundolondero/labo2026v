@@ -8,9 +8,9 @@ Laboratorio de Implementación I, Maestría en Explotación de Datos y Gestión 
 | | |
 |---|---|
 | Archivo | `kaggle/KA7302_1250.csv` (1.250 envíos) |
-| md5 | `37a59a14f87802d96de88d4b7b3710aa` |
+| md5 | `dd143a23c92da4d2e4d1fabe35b3c875` con fin de línea LF, que es como queda el archivo en este repositorio y como lo escribe `fwrite` en Colab. El archivo subido a Kaggle se generó en Windows, con fin de línea CRLF: md5 `37a59a14f87802d96de88d4b7b3710aa`, mismo contenido |
 | Envío en Kaggle | ref 58216596, 10-nov-2026, descripción `z719 londero exp7302 envios=1250 semillerio=10 FINAL`, Public 23,402 |
-| Probabilidades | `prediccion.txt` (promedio del semillerío y una columna por semilla), md5 `bc5ce38e9198589f9764e5bd4a4b31b5` |
+| Probabilidades | `prediccion.txt` (promedio del semillerío y una columna por semilla), md5 `9abfd73fca24b863045bc531179ddc83` con LF y `bc5ce38e9198589f9764e5bd4a4b31b5` con CRLF |
 
 Los cortes `KA7301_*` que también figuran en la cuenta (800 a 1.500) salieron de una corrida previa con la grilla de 35 combinaciones (WF7301). Como la grilla ampliada de 45 (WF7302, la de este notebook) eligió los mismos hiperparámetros y las semillas son las mismas, los archivos de las dos corridas son idénticos byte a byte; `KA7301_1250.csv` tiene el mismo md5 que `KA7302_1250.csv`.
 
